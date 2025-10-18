@@ -13,9 +13,12 @@ public class DashboardController {
     private Button btnLogin;
 
     @FXML
-    void btnLoginAction(ActionEvent event) {
+    void btnLoginAction(ActionEvent event) throws Exception{
         Stage stage = new Stage();
-        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/"))));
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/LoginPage.fxml"))));
+        Stage stage1 = (Stage) btnLogin.getScene().getWindow();
+        stage1.close();
+        stage.show();
     }
 
 }

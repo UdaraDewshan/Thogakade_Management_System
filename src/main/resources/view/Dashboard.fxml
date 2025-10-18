@@ -29,32 +29,31 @@
 
         <StackPane styleClass="left-pane" GridPane.columnIndex="0">
             <children>
-                <StackPane cache="true" style="-fx-background-color: white;" styleClass="left-pane-overlay">
+                <StackPane styleClass="left-pane-overlay">
                <children>
-                  <Label layoutX="62.0" layoutY="236.0" styleClass="brand-title" text="Thoga Kade" />
-                  <ImageView fitHeight="471.0" fitWidth="342.0">
+                  <ImageView fitHeight="523.0" fitWidth="406.0">
                      <image>
-                        <Image url="@../images/thoga kade.png" />
+                        <Image url="@../images/thogakade.png" />
                      </image>
                   </ImageView>
-
-                      <Label styleClass="brand-title" text="Thoga Kade" />
                </children></StackPane>
+
+                <Label styleClass="brand-title" text="Thoga Kade" />
             </children>
         </StackPane>
 
-        <StackPane prefHeight="518.0" prefWidth="369.0" styleClass="right-pane" GridPane.columnIndex="1">
+        <StackPane style="-fx-background-color: #63d5ec;" styleClass="right-pane" GridPane.columnIndex="1">
             <children>
-                <VBox alignment="CENTER" maxWidth="314.0" prefHeight="483.0" prefWidth="314.0" spacing="30.0" style="-fx-background-color: \\;">
+                <VBox alignment="CENTER" maxWidth="300.0" spacing="30.0">
                     <children>
-                  <ImageView fitHeight="226.0" fitWidth="188.0">
+                  <ImageView fitHeight="236.0" fitWidth="245.0">
                      <image>
                         <Image url="@../images/bag.jpg" />
                      </image>
                   </ImageView>
                         <Label styleClass="welcome-header" text="Welcome!" />
 
-                        <Button fx:id="btnLogin" mnemonicParsing="false" onAction="#btnLoginAction" styleClass="login-button" text="Login" />
+                        <Button fx:id="btnLogin" minWidth="0.0" mnemonicParsing="false" onAction="#btnLoginAction" styleClass="login-button" text="Login" />
 
                     </children>
                 </VBox>
