@@ -34,10 +34,10 @@
                   <Label layoutX="62.0" layoutY="236.0" styleClass="brand-title" text="Thoga Kade" />
                   <ImageView fitHeight="471.0" fitWidth="342.0">
                      <image>
-                        <Image url="@../images/thoga%20kade.png" />
+                        <Image url="@../images/thoga kade.png" />
                      </image>
                   </ImageView>
-      
+
                       <Label styleClass="brand-title" text="Thoga Kade" />
                </children></StackPane>
             </children>
