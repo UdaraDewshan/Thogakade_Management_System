@@ -1,9 +1,14 @@
 package controller;
 
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.event.ActionEvent;
 import javafx.scene.input.MouseEvent;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class CatagoryPageController {
 
@@ -33,7 +38,15 @@ public class CatagoryPageController {
 
     @FXML
     void cusManagement(ActionEvent event) {
-        
+        Stage stage = new Stage();
+        try {
+            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/CustomerView.fxml"))));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        Stage stage1 = (Stage) btnCusManagement.getScene().getWindow();
+        stage1.close();
+        stage.show();
     }
 
     @FXML
