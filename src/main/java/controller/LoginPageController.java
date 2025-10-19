@@ -34,10 +34,11 @@ public class LoginPageController {
             if (userName.equals("admin")){
                 if (password.equals("1234")){
                     Stage stage = new Stage();
-                    stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/"))));
+                    stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/Catagory.fxml"))));
                     Stage stage1 = (Stage) btnLogin.getScene().getWindow();
                     stage1.close();
                     stage.show();
+                    stage.setTitle("Dashboard");
                 }else{
                     Alert alert = new Alert(Alert.AlertType.ERROR);
                     alert.setTitle("Error");

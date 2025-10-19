@@ -11,5 +11,6 @@ public class Starter extends Application {
     public void start(Stage stage) throws Exception {
         stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/Dashboard.fxml"))));
         stage.show();
+        stage.setTitle("Welcome Page");
     }
 }

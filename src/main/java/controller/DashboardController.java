@@ -19,6 +19,7 @@ public class DashboardController {
         Stage stage1 = (Stage) btnLogin.getScene().getWindow();
         stage1.close();
         stage.show();
+        stage.setTitle("Login Page");
     }
 
 }
