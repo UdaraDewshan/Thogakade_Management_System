@@ -16,7 +16,7 @@
 
     <children>
         <!-- Left side image background -->
-        <ImageView fitHeight="526.0" fitWidth="397.0" opacity="0.25">
+        <ImageView fitHeight="526.0" fitWidth="371.0" opacity="0.25">
             <image>
                 <Image url="@../images/image (1).png" />
             </image>
@@ -30,7 +30,7 @@
         </Text>
 
         <!-- Glassy Login Card -->
-        <VBox layoutX="426.0" layoutY="129.0" prefHeight="370.0" prefWidth="305.0" spacing="15" style="-fx-background-color: rgba(255,255,255,0.1);                      -fx-background-radius: 20;                      -fx-border-color: rgba(255,255,255,0.25);                      -fx-border-radius: 20;                      -fx-padding: 30;">
+        <VBox layoutX="401.0" layoutY="129.0" prefHeight="361.0" prefWidth="331.0" spacing="15" style="-fx-background-color: rgba(255,255,255,0.1);                      -fx-background-radius: 20;                      -fx-border-color: rgba(255,255,255,0.25);                      -fx-border-radius: 20;                      -fx-padding: 30;">
             <effect>
                 <DropShadow color="#00000070" radius="15.0" />
             </effect>
