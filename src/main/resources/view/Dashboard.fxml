@@ -53,7 +53,7 @@
                   </ImageView>
                         <Label styleClass="welcome-header" text="Welcome!" />
 
-                        <Button fx:id="btnLogin" minWidth="0.0" mnemonicParsing="false" onAction="#btnLoginAction" styleClass="login-button" text="Login" />
+                        <Button fx:id="btnLogin" minWidth="0.0" mnemonicParsing="false" onAction="#btnLoginAction" styleClass="login-button" text="Go To Shop" />
 
                     </children>
                 </VBox>
