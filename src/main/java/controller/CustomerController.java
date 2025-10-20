@@ -106,6 +106,30 @@ public class CustomerController implements Initializable {
 
     @FXML
     void btnAddAction(ActionEvent event) {
+         String custID = txtCustID.getText();
+         String title = txtTitle.getText();
+         String name = txtName.getText();
+         String dob = txtDob.getText();
+         double salary = Double.parseDouble(txtSalary.getText());
+         String address = txtAddress.getText();
+         String city = txtCity.getText();
+         String province = txtProvince.getText();
+         String postalCode = txtPostalCode.getText();
+
+         CustomerDTO customerDTO = new CustomerDTO(custID,title,name,dob,salary,address,city,province,postalCode);
+         customerDTOS.add(customerDTO);
+         tblCustomer.refresh();
+
+        txtAddress.setText("");
+        txtCity.setText("");
+        txtDob.setText("");
+        txtName.setText("");
+        txtProvince.setText("");
+        txtCustID.setText("");
+        txtPostalCode.setText("");
+        txtSalary.setText("");
+        txtTitle.setText("");
+
 
     }
 
@@ -139,12 +163,46 @@ public class CustomerController implements Initializable {
 
     @FXML
     void btnDeleteAction(ActionEvent event) {
+        CustomerDTO selectedItem = tblCustomer.getSelectionModel().getSelectedItem();
+        customerDTOS.remove(selectedItem);
+        tblCustomer.refresh();
 
+        txtAddress.setText("");
+        txtCity.setText("");
+        txtDob.setText("");
+        txtName.setText("");
+        txtProvince.setText("");
+        txtCustID.setText("");
+        txtPostalCode.setText("");
+        txtSalary.setText("");
+        txtTitle.setText("");
     }
 
     @FXML
     void btnUpdateAction(ActionEvent event) {
+        CustomerDTO selectedItem = tblCustomer.getSelectionModel().getSelectedItem();
 
+        selectedItem.setCustID(txtCustID.getText());
+        selectedItem.setAddress(txtAddress.getText());
+        selectedItem.setCity(txtCity.getText());
+        selectedItem.setName(txtName.getText());
+        selectedItem.setDob(txtDob.getText());
+        selectedItem.setTitle(txtTitle.getText());
+        selectedItem.setProvince(txtProvince.getText());
+        selectedItem.setSalary(Double.parseDouble(txtSalary.getText()));
+        selectedItem.setPostalCode(txtPostalCode.getText());
+
+        tblCustomer.refresh();
+
+        txtAddress.setText("");
+        txtCity.setText("");
+        txtDob.setText("");
+        txtName.setText("");
+        txtProvince.setText("");
+        txtCustID.setText("");
+        txtPostalCode.setText("");
+        txtSalary.setText("");
+        txtTitle.setText("");
     }
 
     @FXML
