@@ -15,7 +15,7 @@
 <AnchorPane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: linear-gradient(to bottom right, #001f3f, #0074D9, #FFD700);" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerController">
 
     <!-- Header -->
-    <VBox alignment="CENTER" layoutX="0" layoutY="10" prefHeight="48.0" prefWidth="900" spacing="10">
+    <VBox alignment="CENTER" layoutY="10.0" prefHeight="48.0" prefWidth="900.0" spacing="10">
         <Label text="Customer Management" textFill="white">
             <font>
                 <Font name="Segoe UI Bold" size="28" />
@@ -46,30 +46,30 @@
     </HBox>
 
     <!-- Table Section -->
-    <TableView fx:id="tblCustomer" layoutX="60" layoutY="300" prefHeight="250" prefWidth="780" style="-fx-background-radius: 10; -fx-border-radius: 10;">
+    <TableView fx:id="tblCustomer" layoutX="8.0" layoutY="300.0" prefHeight="251.0" prefWidth="884.0" style="-fx-background-radius: 10; -fx-border-radius: 10;">
         <columns>
-            <TableColumn prefWidth="90" text="Cust ID" />
-            <TableColumn prefWidth="80" text="Title" />
-            <TableColumn prefWidth="120" text="Name" />
-            <TableColumn prefWidth="100" text="DOB" />
-            <TableColumn prefWidth="100" text="Salary" />
-            <TableColumn prefWidth="120" text="Address" />
-            <TableColumn prefWidth="80" text="City" />
-            <TableColumn prefWidth="80" text="Province" />
-            <TableColumn prefWidth="100" text="Postal Code" />
+            <TableColumn fx:id="colCusID" prefWidth="90" text="Cust ID" />
+            <TableColumn fx:id="colTitle" prefWidth="80" text="Title" />
+            <TableColumn fx:id="colName" prefWidth="120" text="Name" />
+            <TableColumn fx:id="colDob" prefWidth="100" text="DOB" />
+            <TableColumn fx:id="colSalary" prefWidth="100" text="Salary" />
+            <TableColumn fx:id="colAddress" prefWidth="120" text="Address" />
+            <TableColumn fx:id="colCity" prefWidth="80" text="City" />
+            <TableColumn fx:id="colProvince" prefWidth="99.199951171875" text="Province" />
+            <TableColumn fx:id="colPostalCode" prefWidth="92.0" text="Postal Code" />
         </columns>
     </TableView>
 
     <!-- Buttons -->
-    <Button fx:id="btnAdd" layoutX="748.0" layoutY="90.0" prefHeight="36.0" prefWidth="91.0" styleClass="action-button-green" text="Add" />
-    <Button fx:id="btnUpdate" layoutX="748.0" layoutY="133.0" prefHeight="36.0" prefWidth="91.0" styleClass="action-button-blue" text="Update" />
-    <Button fx:id="btnDelete" layoutX="748.0" layoutY="178.0" prefHeight="36.0" prefWidth="91.0" styleClass="action-button-red" text="Delete" />
-    <Button fx:id="btnClear" layoutX="748.0" layoutY="224.0" prefHeight="36.0" prefWidth="91.0" styleClass="action-button-gray" text="Clear" />
-   <Button fx:id="btnBack" layoutX="801.0" layoutY="556.0" prefHeight="36.0" prefWidth="91.0" style="-fx-background-color: #ab1894; -fx-border-color: black;" text="Back" textFill="WHITE">
-      <font>
-         <Font name="System Bold" size="15.0" />
-      </font>
-   </Button>
+    <Button fx:id="btnAdd" layoutX="748.0" layoutY="90.0" onAction="#btnAddAction" prefHeight="36.0" prefWidth="91.0" styleClass="action-button-green" text="Add" />
+    <Button fx:id="btnUpdate" layoutX="748.0" layoutY="133.0" onAction="#btnUpdateAction" prefHeight="36.0" prefWidth="91.0" styleClass="action-button-blue" text="Update" />
+    <Button fx:id="btnDelete" layoutX="748.0" layoutY="178.0" onAction="#btnDeleteAction" prefHeight="36.0" prefWidth="91.0" styleClass="action-button-red" text="Delete" />
+    <Button fx:id="btnClear" layoutX="748.0" layoutY="224.0" onAction="#btnClearAction" prefHeight="36.0" prefWidth="91.0" styleClass="action-button-gray" text="Clear" />
+    <Button fx:id="btnBack" layoutX="800.0" layoutY="557.0" onAction="#btnBackAction" onMouseEntered="#onBackHover" onMouseExited="#onBackExit" prefHeight="36.0" prefWidth="91.0" style="-fx-background-color: linear-gradient(to right, #ab1894, #5e0b60);            -fx-border-color: transparent;            -fx-background-radius: 8;            -fx-border-radius: 8;            -fx-font-weight: bold;            -fx-font-size: 15px;            -fx-cursor: hand;" styleClass="button-back" text="Back" textFill="WHITE">
+        <font>
+            <Font name="System Bold" size="15.0" />
+        </font>
+    </Button>
 
     <stylesheets>
         <URL value="@../css/Customer.css" />

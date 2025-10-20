@@ -50,6 +50,27 @@
     -fx-background-color: #95a5a6;
 }
 
+.button-back {
+    -fx-background-color: linear-gradient(to right, #c31432, #240b36);
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 4, 0, 0, 2);
+}
+
+.button-back:hover {
+    -fx-background-color: linear-gradient(to right, #ff416c, #ff4b2b);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.35), 6, 0, 0, 3);
+}
+
+.button-back:pressed {
+    -fx-background-color: #7a0f25;
+}
+
+
 /* Table */
 .table-view {
     -fx-background-color: rgba(255, 255, 255, 0.9);
