@@ -52,7 +52,16 @@ public class CatagoryPageController {
 
     @FXML
     void employeeManagement(ActionEvent event) {
-
+        Stage stage = new Stage();
+        try {
+            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/EmployeeView.fxml"))));
+            stage.setTitle("Employee Management");
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        Stage stage1 = (Stage) btnCusManagement.getScene().getWindow();
+        stage1.close();
+        stage.show();
     }
 
     @FXML
