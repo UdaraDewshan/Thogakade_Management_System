@@ -28,8 +28,8 @@
     <HBox layoutX="60" layoutY="90" spacing="20">
         <VBox spacing="10">
             <TextField fx:id="txtItemCode" prefHeight="26.0" prefWidth="206.0" promptText="Item Code" styleClass="input-field" />
-            <TextField fx:id="txtCatogary" promptText="Category" styleClass="input-field" />
-            <TextField fx:id="txtCategory" promptText="Qty on Hand" styleClass="input-field" />
+         <TextField fx:id="txtCatagary" promptText="Catogary" styleClass="input-field" />
+         <TextField fx:id="txtQty" promptText="Qty" styleClass="input-field" />
         </VBox>
 
         <VBox spacing="10">
@@ -43,7 +43,7 @@
     <!-- Table Section -->
     <TableView fx:id="tblItem" layoutX="60.0" layoutY="276.0" prefHeight="250" prefWidth="780" style="-fx-background-radius: 10; -fx-border-radius: 10;">
         <columns>
-            <TableColumn fx:id="Colcode" prefWidth="108.79998016357422" text="Item Code" />
+            <TableColumn fx:id="colcode" prefWidth="108.79998016357422" text="Item Code" />
             <TableColumn fx:id="colDescription" minWidth="0.0" prefWidth="237.60003662109375" text="Description" />
             <TableColumn fx:id="colCatogory" prefWidth="160.80001831054688" text="Category" />
             <TableColumn fx:id="colQty" prefWidth="137.5999755859375" text="qtyOnHand" />

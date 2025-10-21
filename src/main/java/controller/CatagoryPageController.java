@@ -57,7 +57,16 @@ public class CatagoryPageController {
 
     @FXML
     void itemManagement(ActionEvent event) {
-
+        Stage stage = new Stage();
+        try {
+            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/ItemForm.fxml"))));
+            stage.setTitle("Customer Management");
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        Stage stage1 = (Stage) btnCusManagement.getScene().getWindow();
+        stage1.close();
+        stage.show();
     }
 
     @FXML
