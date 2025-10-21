@@ -60,7 +60,7 @@ public class CatagoryPageController {
         Stage stage = new Stage();
         try {
             stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/ItemForm.fxml"))));
-            stage.setTitle("Customer Management");
+            stage.setTitle("Item Management");
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -71,7 +71,16 @@ public class CatagoryPageController {
 
     @FXML
     void supManagement(ActionEvent event) {
-
+        Stage stage = new Stage();
+        try {
+            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/SupplierView.fxml"))));
+            stage.setTitle("Supplier Management");
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        Stage stage1 = (Stage) btnCusManagement.getScene().getWindow();
+        stage1.close();
+        stage.show();
     }
 
 }
