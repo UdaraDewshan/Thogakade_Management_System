@@ -56,8 +56,7 @@
             <TableColumn fx:id="colProvince" prefWidth="120" text="Province" />
             <TableColumn fx:id="colPostalCode" prefWidth="80" text="PostalCode" />
             <TableColumn fx:id="colPhone" prefWidth="80" text="Phone" />
-            <TableColumn fx:id="colEmail" prefWidth="95.2000732421875" text="Email" />
-         <TableColumn prefWidth="84.7999267578125" text="Phone" />
+            <TableColumn fx:id="colEmail" prefWidth="97.59995117187498" text="Email" />
         </columns>
     </TableView>
 
